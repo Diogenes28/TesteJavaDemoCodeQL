@@ -112,5 +112,5 @@ jobs:
           version: "GitHub Actions - ${{ github.run_id }}"   # Nome da versão que aparece na plataforma
           vid: ${{ secrets.VERACODE_API_ID }}
           vkey: ${{ secrets.VERACODE_API_KEY }}
-          deleteincompletescan: true                # Cancela se o upload não for completo
-          scantimeout: 15                           # Espera até 15 minutos pelo resultado
+          deleteincompletescan: 0                # Cancela se o upload não for completo
+          scantimeout: 60                           # Espera até 15 minutos pelo resultado
